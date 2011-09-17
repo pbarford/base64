@@ -8,8 +8,9 @@ public class Base64Tests extends TestCase {
 
 	public void test1() {
 		try {
-			String val = "hello there hows it going";
+			String val = "Man is distinguished, not only by his reason, but by this singular passion from other animals, which is a lust of the mind, that by a perseverance of delight in the continued and indefatigable generation of knowledge, exceeds the short vehemence of any carnal pleasure.";
 			String encoded = Base64Util.encode(val);
+			System.out.println(encoded);
 			String decoded = Base64Util.decode(encoded);
 			assertEquals(val, decoded);
 		} catch (UnsupportedEncodingException e) {
